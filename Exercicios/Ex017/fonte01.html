@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style> /*Tem 3 tipos de fontes porque caso o sitío onde está a passar o site não tenha o tipo ele tenta o outro */
+        body{
+            font-family: Arial, Helvetica, sans-serif; 
+            /*
+            Medidas Absolutas
+            mm, cm, in, px, pt, pc
+
+            Medidas Relativas
+            em, ex, rem, vw, %
+            Geralmente 16px = 1em
+            */
+            font-size: 1em;
+            /*Nem todos os tipos de letra tem estas alterações*/
+            font-weight: lighter; /*Font-weight é o peso da letra se tem pouco negrito ou muito negrito.
+            lighter normal bold bolder
+            */
+            font-style: italic; /*A Font-style é o estilo a letra itálico, normal etc.*/
+            text-decoration: underline; /*Sublinhado*/
+            
+        } 
+        h1{
+            /*Normal
+            font-family: sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;*/
+
+            /*Shorthand font
+            - font-style -> font-size -> font-weight -> font-family */
+            font: italic bolder 3em sans-serif;
+        }
+
+        h2{
+            font: bold 2em sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, perspiciatis ullam numquam, temporibus possimus veniam dolorum quasi itaque praesentium non harum dolores quisquam qui impedit doloremque eligendi nesciunt quae omnis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ullam excepturi non necessitatibus, dolore cumque accusamus velit mollitia ipsam doloribus voluptas aut quod quasi expedita doloremque fuga pariatur deleniti incidunt?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore officia quidem excepturi! Exercitationem fuga ut dignissimos perspiciatis, culpa nam ea aliquid eius quidem, molestias consequuntur libero assumenda, provident magni sapiente?</p>
+    <h2>Subtítulo do Exercício</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum natus sequi debitis quo itaque necessitatibus, asperiores quaerat dolorum cumque consequatur odio corrupti, ad quas quasi possimus exercitationem minima saepe. Illo.</p>
+</body>
+</html>

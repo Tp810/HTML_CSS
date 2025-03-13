@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(105, 105, 105);
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        h1{
+            box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.322) /*A tag inset serve para fazer uma sombra por dentro.*/
+        }
+        nav{
+            background-color: rgb(88, 87, 87);
+            padding: 3px;
+            box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.479);
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: 20px;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 0px;
+            box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.452);
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside{
+            background-color: rgb(124, 124, 124);
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header> <!--Cabeçalho-->
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <section id="assuntos">
+                
+            </section>
+            <section id="noticias">
+                <article>
+                    <h2>Noticas sobre Portugal</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat id illo aperiam at optio, quos molestias ipsum iusto! Est sequi quaerat repellat harum! Praesentium accusamus impedit sint itaque vero? Tempore. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa nobis quis aut a! Necessitatibus ratione illo repellat. Magni dignissimos sapiente rerum vero debitis delectus, adipisci velit quam accusamus sit excepturi?</p>
+                    <aside>
+                        <p>Artigo Antigo escrito por dfbj fdvj</p>
+                    </aside>
+                </article>
+                <article>
+
+                </article>
+            </section>
+        </section>
+    </main>
+    <footer> <!--Rodapé-->
+        <p>Desenvolvido por Tfjghudfsgos</p>
+    </footer>
+    <div id="bola">
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Código-fonte / Pré-formatação</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em liguagem JavaScript</p> <!--A Tag code serve para todas os caracteres do código tenham o mesmo espaçamento-->
+
+    <pre> <!-- A tag pre serve para fazer a quebra de parágrafos-->
+        <code>
+num = int(input("Escreva um número:"))
+if num % 2 == 0:
+    print(f"O número {num} é par")
+else:
+    print(f"O número {num} é impar")
+        </code>
+    </pre>
+
+    <h2>Citações</h2>
+    <p>Como diria um amigo: <q>quando cai um limão faz uma limonada</q></p> <!--A tag q são áspas-->
+    <h2>Citações Completas</h2>
+    <p>Segundo Jeff Noble, no seu livro HTML para Leigos:</p>
+    <blockquote cite="https://www.google.pt/books/edition/HTML_XHTML_and_CSS_All_In_One_For_Dummie/-LdlRI0fT_UC?hl=pt-PT&gbpv=1">
+        A diferença entre elementos em inline e um bloco de texto é importante. Os elementos HTML neste capítulo descreve os blocos de texto.
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou a aprender <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Shetts">CSS</abbr>. Estou a adorar.</p> <!--A tag abbr mostra o significado da abreviação quando passamos com o rato por cima da abreviação-->
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou a aprender a criar sites com o HTML.</bdo></p> <!--A tag bdo r inverte a ordem do texto-->
+    
+</body>
+</html>
