@@ -3,20 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo Fixo de tela</title>
     <style>
         body{
+            /*
             height: 100vh;
             background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
-            background-position: center top;
+            background-position: center center;
             background-repeat: no-repeat;
-            background-size: cover; /*A tag cover faz com que a imagem não apareca toda dependendo do tamanho, mas não distorce*/
-            /*background-size: contain; A tag contain faz com que a imagem não fique distrocida quando aumenta ou diminui a tela, mas a imagem quando diminuida começa a aparecer o fundo sem imagem.*/
+            background-size: cover; [A tag cover faz com que a imagem não apareca toda dependendo do tamanho, mas não distorce.]
+            background-size: contain; [A tag contain faz com que a imagem não fique distrocida quando aumenta ou diminui a tela, mas a imagem quando diminuida começa a aparecer o fundo sem imagem.]
+            background-attachment: fixed;  [A tag fixed faz com que a imagem fique fixa sem acabar quando tem muita informação.]
+            */
+            
+            /*Shorthand - background
+                color - image - position - repeat - size - attachment
+                Os navegadores atualmente não conseguem suporta o size na shorthand
+            */
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover;
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -24,7 +34,7 @@
         }
     </style>
 </head>
-<body> <!--A imagem para quando tem muita informação-->
+<body> 
     <main>
         <h1>Teste de imagem de fundo</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis aperiam fugit repudiandae iure adipisci dolores officia veritatis consequatur, ratione iste. Fuga suscipit magni earum perspiciatis dolore, totam at deserunt repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam magnam dignissimos, asperiores, molestiae, aut ratione aperiam cumque odit animi expedita quibusdam odio harum sunt fugit blanditiis. Cumque quae similique placeat? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, debitis incidunt. Illum ratione quas non dolor eius quam aperiam minima delectus voluptate illo, perspiciatis debitis suscipit fuga, deleniti impedit doloribus?</p>
