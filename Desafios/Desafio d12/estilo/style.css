@@ -42,6 +42,10 @@ section.imagem{
     background-color: rgb(44, 43, 43);
     color: white;
 }
+section.imagem p{
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.363);
+}
 footer{
     background-color: black ;
     color: white;
