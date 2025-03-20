@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+        thead th{
+            position: sticky; /* Cola na parte de cima do site e para quando termina a tabela */
+            top: -1px;
+            background-color: gray;
+        }
+        tbody   tr:nth-child(odd){ /* nth-child(odd) faz com que os as linhas impares ficam com a cor lightgray */
+            background-color: lightgray;
+        }
+        tbody   tr:nth-child(even){ /* nth-child(even) faz com que os as linhas pares ficam com a cor white */
+            background-color: rgb(255, 255, 255);
+        }
+        td.numero{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Anotomia para tabelas grandes
+        Table
+            Caption
+            Thead
+                tr, td, th
+            tbody
+                tr, td, th
+            tfoot
+                tr, td, th
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de janeiro</td>
+                <td class="numero">17 264 967</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de janeiro</td>
+                <td class="numero">17 264 967</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de janeiro</td>
+                <td class="numero">17 264 967</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de janeiro</td>
+                <td class="numero">17 264 967</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de janeiro</td>
+                <td class="numero">17 264 967</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de janeiro</td>
+                <td class="numero">17 264 967</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td class="numero"><strong>00000</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis distinctio maxime quae, nobis aspernatur facere iusto temporibus? Recusandae nihil facere cupiditate consectetur ipsum fugit nobis vero. Quod tenetur in dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga molestiae nisi quia id, neque ab unde pariatur aut explicabo dolores. Suscipit temporibus incidunt dolorem quam veniam totam itaque in dolore. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate commodi tempora quis obcaecati qui libero similique necessitatibus dolore. Pariatur, numquam iusto quis ratione iure natus recusandae voluptatum nihil deleniti impedit? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius odit labore, voluptatem voluptatum ipsa officia cumque hic. Natus, ipsum, aperiam placeat eius quia mollitia pariatur, illum soluta ipsa nesciunt aspernatur.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis distinctio maxime quae, nobis aspernatur facere iusto temporibus? Recusandae nihil facere cupiditate consectetur ipsum fugit nobis vero. Quod tenetur in dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga molestiae nisi quia id, neque ab unde pariatur aut explicabo dolores. Suscipit temporibus incidunt dolorem quam veniam totam itaque in dolore. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate commodi tempora quis obcaecati qui libero similique necessitatibus dolore. Pariatur, numquam iusto quis ratione iure natus recusandae voluptatum nihil deleniti impedit? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius odit labore, voluptatem voluptatum ipsa officia cumque hic. Natus, ipsum, aperiam placeat eius quia mollitia pariatur, illum soluta ipsa nesciunt aspernatur.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis distinctio maxime quae, nobis aspernatur facere iusto temporibus? Recusandae nihil facere cupiditate consectetur ipsum fugit nobis vero. Quod tenetur in dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga molestiae nisi quia id, neque ab unde pariatur aut explicabo dolores. Suscipit temporibus incidunt dolorem quam veniam totam itaque in dolore. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate commodi tempora quis obcaecati qui libero similique necessitatibus dolore. Pariatur, numquam iusto quis ratione iure natus recusandae voluptatum nihil deleniti impedit? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius odit labore, voluptatem voluptatum ipsa officia cumque hic. Natus, ipsum, aperiam placeat eius quia mollitia pariatur, illum soluta ipsa nesciunt aspernatur.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis distinctio maxime quae, nobis aspernatur facere iusto temporibus? Recusandae nihil facere cupiditate consectetur ipsum fugit nobis vero. Quod tenetur in dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga molestiae nisi quia id, neque ab unde pariatur aut explicabo dolores. Suscipit temporibus incidunt dolorem quam veniam totam itaque in dolore. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate commodi tempora quis obcaecati qui libero similique necessitatibus dolore. Pariatur, numquam iusto quis ratione iure natus recusandae voluptatum nihil deleniti impedit? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius odit labore, voluptatem voluptatum ipsa officia cumque hic. Natus, ipsum, aperiam placeat eius quia mollitia pariatur, illum soluta ipsa nesciunt aspernatur.</p>
+</body>
+</html>
